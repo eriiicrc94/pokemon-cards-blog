@@ -1,9 +1,9 @@
 <template>
   <div class="the-header">
-    <h1 class="the-header__logo" @click="navigateTo('/pokemon-cards-blog')">Pokémon</h1>
+    <h1 class="the-header__logo" @click="navigateTo('/')">Pokémon</h1>
     <div class="the-header__navigator">
-      <div class="the-header__link" @click="navigateTo('/pokemon-cards-blog')">HOME</div>
-      <div class="the-header__link" @click="navigateTo('/pokemon-cards-blog/card-grading')">GRADING</div>
+      <div class="the-header__link" @click="navigateTo('/')">HOME</div>
+      <div class="the-header__link" @click="navigateTo('/card-grading')">GRADING</div>
     </div>
   </div>
 </template>
