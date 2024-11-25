@@ -12,7 +12,7 @@ export default defineNuxtConfig({
         {
           rel: 'icon',
           type: 'image/x-icon',
-          href: '/favicon.ico',
+          href: '/pokemon-cards-blog/favicon.ico'
         },
       ],
     },
