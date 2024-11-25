@@ -15,6 +15,9 @@ export default defineNuxtConfig({
           href: '/pokemon-cards-blog/favicon.ico'
         },
       ],
+      meta: [
+        { name: 'robots', content: 'noindex, nofollow' },
+      ]
     },
   },
   modules: ['@nuxtjs/i18n'],
