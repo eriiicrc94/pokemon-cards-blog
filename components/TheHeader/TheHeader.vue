@@ -18,7 +18,7 @@
   display: flex;
   align-items: center;
   padding: 1rem;
-  max-height: 80px;
+  max-height: 50px;
   color: #FFFF;
   gap: 5rem;
 
