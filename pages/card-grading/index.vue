@@ -24,7 +24,7 @@
         :items="companiesList"
         :final-description="t('gradingSection.itsOnYou')" />
   
-      <section id="grading-criteria" class="grading-criteria">
+      <!-- <section id="grading-criteria" class="grading-criteria">
         <h2>Criterios Clave para el Grading de Cartas</h2>
         <p>El estado físico de tu carta Pokémon es evaluado según varios factores importantes que determinan su
           calificación final. Estos son los principales criterios que las casas de grading toman en cuenta:</p>
@@ -120,7 +120,7 @@
         </ul>
         <p>Con estos productos y consejos, puedes garantizar que tus cartas se mantengan en excelentes condiciones y
           aumenten su valor en el mercado de coleccionismo.</p>
-      </section>
+      </section> -->
     </div>
   </div>
 </template>
@@ -189,7 +189,7 @@ const companiesList = [
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding-top: 3rem;
+  padding: 3rem 0;
   max-width: 1440px;
   margin: 0 auto;
   color: #333;

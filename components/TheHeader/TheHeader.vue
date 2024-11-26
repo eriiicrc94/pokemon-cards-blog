@@ -17,10 +17,10 @@
   background-color: #007bff;
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 2rem;
   max-height: 50px;
   color: #FFFF;
-  gap: 5rem;
+  gap: 3rem;
 
   &__logo {
     cursor: pointer;

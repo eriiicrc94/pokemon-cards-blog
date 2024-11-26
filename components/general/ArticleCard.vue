@@ -4,8 +4,9 @@
     <p>{{ description }}</p>
     <ul v-if="items && items.length" class="article-card__items">
       <li v-for="(item, index) in items" :key="index">
-        <strong>{{ item.title }}</strong>: {{ item.description }}
-        <a v-if="item.link" :href="item.link" target="_blank" rel="noopener noreferrer">Visitar sitio web</a>
+        <strong>{{ item.title }}:</strong> 
+        <p>{{ item.description }}</p>
+        <!-- <a v-if="item.link" :href="item.link" target="_blank" rel="noopener noreferrer">Visitar sitio web</a> -->
       </li>
     </ul>
     <p>{{ finalDescription }}</p>
@@ -55,7 +56,7 @@ const getBackgroundClass = computed(() => {
   &__items{
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 1rem;
   }
 }
 
