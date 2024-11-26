@@ -1,6 +1,9 @@
 <template>
   <div class="the-header">
-    <NuxtLink class="the-header__logo" to='/'>Pokémon</NuxtLink>
+    <NuxtLink class="the-header__logo" to='/'>
+      <img v-if="isMobile" src="@/assets/icons/pokeball.png" alt="Pokémon"></img>
+      <span v-else>Pokémon</span>
+    </NuxtLink>
     <div class="the-header__navigator">
       <NuxtLink class="the-header__link" to='/' exact-active-class="active-link">HOME</NuxtLink>
       <NuxtLink class="the-header__link" to='/card-grading' exact-active-class="active-link">GRADING</NuxtLink>
@@ -9,6 +12,7 @@
 </template>
 
 <script setup lang="ts">
+import { isMobile } from '@/composables/useIsMobile'
 </script>
 
 <style scoped lang="scss">
@@ -28,6 +32,13 @@
     font-size: 2rem;
     font-weight: bold;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
   }
 
   &__navigator {

@@ -9,6 +9,7 @@
         <!-- <a v-if="item.link" :href="item.link" target="_blank" rel="noopener noreferrer">Visitar sitio web</a> -->
       </li>
     </ul>
+    <slot />
     <p>{{ finalDescription }}</p>
   </section>
 </template>
