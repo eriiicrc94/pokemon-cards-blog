@@ -23,14 +23,15 @@
           :description="t('gradingSection.physiqueStateCard')" 
           :items="criterias"
           :final-description="t('gradingSection.maximizeCardState')" 
-          tone="gray" />
+        />
   
       <article-card 
         section-id="grading-companies"
         :title="t('gradingSection.bestCompanies')" 
         :description="t('gradingSection.selectingGradingCompanyCrucial')" 
         :items="companiesList"
-        :final-description="t('gradingSection.itsOnYou')" />
+        :final-description="t('gradingSection.itsOnYou')" 
+        tone="gray" />
 
 
       <article-card 
