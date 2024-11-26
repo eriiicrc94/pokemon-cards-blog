@@ -118,21 +118,27 @@ const indexGuideItems = [
   },
 ]
 
-const companiesList = (tm('gradingSection.companies') as any[]).map((item) => ({
-  title: item.title?.body?.static || item.title,
-  description: item.description?.body?.static || item.description,
-  link: item.link?.body?.static || item.link
-}))
+const companiesList = computed(() => {
+  return (tm('gradingSection.companies') as any[]).map((item) => ({
+    title: item.title?.body?.static || item.title,
+    description: item.description?.body?.static || item.description,
+    link: item.link?.body?.static || item.link
+  }))
+})
 
-const criterias = (tm('gradingSection.criterias') as any[]).map((item) => ({
-  title: item.title?.body?.static || item.title,
-  description: item.description?.body?.static || item.description,
-}))
+const criterias = computed(() => {
+ return (tm('gradingSection.criterias') as any[]).map((item) => ({
+    title: item.title?.body?.static || item.title,
+    description: item.description?.body?.static || item.description,
+  }))
+})
 
-const protectingItems = (tm('gradingSection.protectingItems') as any[]).map((item) => ({
-  title: item.title?.body?.static || item.title,
-  description: item.description?.body?.static || item.description,
-}))
+const protectingItems = computed(() => {
+  return (tm('gradingSection.protectingItems') as any[]).map((item) => ({
+    title: item.title?.body?.static || item.title,
+    description: item.description?.body?.static || item.description,
+  }))
+})
 </script>
 
 
