@@ -2,8 +2,8 @@
   <div class="the-header">
     <NuxtLink class="the-header__logo" to='/'>Pokémon</NuxtLink>
     <div class="the-header__navigator">
-      <NuxtLink class="the-header__link" to='/'>HOME</NuxtLink>
-      <NuxtLink class="the-header__link" to='/card-grading'>GRADING</NuxtLink>
+      <NuxtLink class="the-header__link" to='/' exact-active-class="active-link">HOME</NuxtLink>
+      <NuxtLink class="the-header__link" to='/card-grading' exact-active-class="active-link">GRADING</NuxtLink>
     </div>
   </div>
 </template>
@@ -44,6 +44,9 @@
     transition: font-weight 0.1s ease-in-out;
 
     &:hover {
+      font-weight: bold;
+    }
+    &.active-link {
       font-weight: bold;
     }
   }
