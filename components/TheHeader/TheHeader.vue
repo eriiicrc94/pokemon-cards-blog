@@ -1,9 +1,9 @@
 <template>
   <div class="the-header">
-    <h1 class="the-header__logo" @click="navigateTo('/')">Pokémon</h1>
+    <NuxtLink class="the-header__logo" to='/'>Pokémon</NuxtLink>
     <div class="the-header__navigator">
-      <div class="the-header__link" @click="navigateTo('/')">HOME</div>
-      <div class="the-header__link" @click="navigateTo('/card-grading')">GRADING</div>
+      <NuxtLink class="the-header__link" to='/'>HOME</NuxtLink>
+      <NuxtLink class="the-header__link" to='/card-grading'>GRADING</NuxtLink>
     </div>
   </div>
 </template>
@@ -24,6 +24,10 @@
 
   &__logo {
     cursor: pointer;
+    color: #FFFF;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
   }
 
   &__navigator {
@@ -34,6 +38,8 @@
   }
 
   &__link {
+    text-decoration: none;
+    color: #FFFF;
     cursor: pointer;
     transition: font-weight 0.1s ease-in-out;
 
