@@ -120,23 +120,23 @@ const indexGuideItems = [
 
 const companiesList = computed(() => {
   return (tm('gradingSection.companies') as any[]).map((item) => ({
-    title: item.title?.body?.static || item.title,
-    description: item.description?.body?.static || item.description,
-    link: item.link?.body?.static || item.link
+    title: item.title?.body?.static || item.title?.b?.s,
+    description: item.description?.body?.static || item.description?.b?.s,
+    link: item.link?.body?.static || item.link?.b?.s,
   }))
 })
 
 const criterias = computed(() => {
  return (tm('gradingSection.criterias') as any[]).map((item) => ({
-    title: item.title?.body?.static || item.title,
-    description: item.description?.body?.static || item.description,
+    title: item.title?.body?.static || item.title?.b?.s,
+    description: item.description?.body?.static || item.description?.b?.s,
   }))
 })
 
 const protectingItems = computed(() => {
   return (tm('gradingSection.protectingItems') as any[]).map((item) => ({
-    title: item.title?.body?.static || item.title,
-    description: item.description?.body?.static || item.description,
+    title: item.title?.body?.static || item.title?.b?.s,
+    description: item.description?.body?.static || item.description?.b?.s,
   }))
 })
 </script>
