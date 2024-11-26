@@ -22,4 +22,32 @@ h1 {
   font-weight: 700;
   margin: 0;
 }
+
+h2 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 600;
+  color: #007bff;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
 </style>
