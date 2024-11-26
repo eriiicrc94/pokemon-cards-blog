@@ -87,12 +87,6 @@ header {
   margin-bottom: 40px;
 }
 
-h1 {
-  font-size: 2.5em;
-  font-weight: 700;
-  margin: 0;
-}
-
 p {
   font-size: 1.2em;
   line-height: 1.6;

@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: false },
   app: {
-    baseURL: '/pokemon-cards-blog',
+    baseURL: '/pokemon-cards-blog/',
     head: {
       link: [
         {

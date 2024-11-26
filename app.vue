@@ -16,4 +16,10 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
 }
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin: 0;
+}
 </style>
