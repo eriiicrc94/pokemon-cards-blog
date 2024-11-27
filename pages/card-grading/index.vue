@@ -14,7 +14,9 @@
         section-id="what-is-grading"
         :title="t('gradingSection.whatIsGrading.title')" 
         :description="t('gradingSection.whatIsGrading.description')" 
-        :final-description="t('gradingSection.whatIsGrading.conclusion')" 
+        :final-description="t('gradingSection.whatIsGrading.conclusion')"
+        image-src="pikachupsa9"
+        image-alt="Pikachu PSA 10"
         tone="gray" />
 
       <article-card 
@@ -23,6 +25,9 @@
           :description="t('gradingSection.gradingCriteria.description')" 
           :items="criterias"
           :final-description="t('gradingSection.gradingCriteria.conclusion')" 
+          image-src="centrado"
+          image-alt="Centrado Carta Pokémon"
+          reverse
         />
       <article-card 
         section-id="grading-companies"
@@ -114,6 +119,9 @@ useSeoMeta({
 
 
 <style lang="scss">
+html {
+  scroll-behavior: smooth;
+}
 .grading-page {
   display: flex;
   flex-direction: column;

@@ -35,12 +35,12 @@ h2 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: .8rem;
   line-height: 1.5;
   margin: 0;
 
   @media(min-width: 769px) {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 

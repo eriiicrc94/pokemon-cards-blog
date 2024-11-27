@@ -1,16 +1,25 @@
 <template>
-  <section :id="sectionId" class="article-card" :class="getBackgroundClass">
-    <h2>{{ title }}</h2>
-    <p>{{ description }}</p>
-    <ul v-if="items && items.length" class="article-card__items">
-      <li v-for="(item, index) in items" :key="index">
-        <strong>{{ item.title }}</strong> 
-        <p>{{ item.description }}</p>
-        <!-- <a v-if="item.link" :href="item.link" target="_blank" rel="noopener noreferrer">Visitar sitio web</a> -->
-      </li>
-    </ul>
-    <slot />
-    <p>{{ finalDescription }}</p>
+  <section :id="sectionId" class="article-card" 
+    :class="{
+        [getBackgroundClass]: true, 
+        'article-card--reverse': reverse
+    }">
+    <div class="article-card__text">
+      <h2>{{ title }}</h2>
+      <p>{{ description }}</p>
+      <ul v-if="items && items.length" class="article-card__items">
+        <li v-for="(item, index) in items" :key="index">
+          <strong>{{ item.title }}</strong> 
+          <p>{{ item.description }}</p>
+          <!-- <a v-if="item.link" :href="item.link" target="_blank" rel="noopener noreferrer">Visitar sitio web</a> -->
+        </li>
+      </ul>
+      <slot />
+      <p>{{ finalDescription }}</p>
+    </div>
+    <div v-if="imageSrc" class="article-card__image">
+      <img :src="`/images/${imageSrc}.webp`" :alt="imageAlt" />
+    </div>
   </section>
 </template>
 
@@ -36,6 +45,16 @@ const props = defineProps({
     type: String,
     required: true,
   },
+  reverse: {
+    type: Boolean,
+    default: false
+  },
+  imageSrc: {
+    type: String,
+  },
+  imageAlt: {
+    type: String,
+  },
   tone: {
     type: String,
     default: 'bg-white',
@@ -50,15 +69,46 @@ const getBackgroundClass = computed(() => {
 <style lang="scss" scoped>
 .article-card {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
   padding: 1.5rem 2rem;
   margin: 0 2rem;
+  flex-direction: column;
+
+  @media(min-width: 769px) {
+    flex-direction: row;
+    gap: 4rem
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 
   &__items{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media(min-width: 769px) {
+      justify-content: flex-end
+    }
+    img {
+      max-width: 200px;
+      max-height: 400px; 
+      border-radius: .5rem;
+    }
+  }
+
+  &--reverse {
+    @media(min-width: 769px) {
+      flex-direction: row-reverse;
+    }
   }
 }
 
