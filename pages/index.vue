@@ -1,1 +1,8 @@
-<template>HOME</template>
+<template>
+  <div class="home-page">
+    
+  </div>
+</template>
+
+<style>
+</style>

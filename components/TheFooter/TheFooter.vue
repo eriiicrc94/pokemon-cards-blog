@@ -5,7 +5,7 @@
       <nav>
         <ul>
           <li>
-            <NuxtLink class="the-footer__link" to='/contacto' exact-active-class="active-link">Contacto</NuxtLink>
+            <!-- <NuxtLink class="the-footer__link" to='/contacto' exact-active-class="active-link">Contacto</NuxtLink> -->
           </li>
         </ul>
       </nav>
