@@ -38,6 +38,21 @@
           </td>
         </tr>
         <tr>
+          <td>BGS</td>
+          <td>
+            <span v-if="!isMobile">Alto</span>
+            <img v-else src="@/assets/icons/arrow-up.webp" alt="Alta valoración del precio" />
+          </td>
+          <td>
+            <span v-if="!isMobile">Largo</span>
+            <img v-else src="@/assets/icons/arrow-down.webp" alt="Tiempo de entrega largo" />
+          </td>
+          <td>
+            <span v-if="!isMobile">Alto</span>
+            <img v-else src="@/assets/icons/arrow-up.webp" alt="Alta fiabilidad" />
+          </td>
+        </tr>
+        <tr>
           <td>
             <span v-if="!isMobile">APGrading</span>
             <span v-else>AP</span>

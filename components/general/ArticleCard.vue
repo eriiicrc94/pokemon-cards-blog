@@ -9,9 +9,12 @@
       <p>{{ description }}</p>
       <ul v-if="items && items.length" class="article-card__items">
         <li v-for="(item, index) in items" :key="index">
-          <strong>{{ item.title }}</strong> 
-          <p>{{ item.description }}</p>
-          <!-- <a v-if="item.link" :href="item.link" target="_blank" rel="noopener noreferrer">Visitar sitio web</a> -->
+          <a v-if="item.link" :href="item.link" class="article-card__items__link" target="_blank" rel="noopener noreferrer">
+            <strong>{{ item.title }}</strong>
+            <img class="article-card__items__icon" src="@/assets/icons/click.webp" alt="Visita la página web" />
+          </a>
+          <strong v-else>{{ item.title }}</strong> 
+          <p v-if="item.description">{{ item.description }}</p>
         </li>
       </ul>
       <slot />
@@ -83,6 +86,18 @@ const getBackgroundClass = computed(() => {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    &__link {
+      color: #333333;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      width: fit-content;
+    }
+
+    &__icon{
+      width: 1.2rem;
+    }
   }
 
   &__image {
