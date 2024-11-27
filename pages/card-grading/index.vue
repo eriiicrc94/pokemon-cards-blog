@@ -32,6 +32,7 @@
             <img src="@/assets/images/centrado.webp" alt="Centrado de Carta Pokémon" />
         </template>
       </article-card>
+
       <article-card 
         section-id="grading-companies"
         :title="t('gradingSection.bestCompanies.title')" 
@@ -60,9 +61,9 @@
 </template>
 
 <script setup>
-import ArticleCard from '@/components/general/ArticleCard.vue'
-import IndexGuide from '@/components/general/IndexGuide.vue'
-import CompaniesComparisionTable from '@/components/grading/CompaniesComparisionTable.vue'
+import ArticleCard from '@/components/General/ArticleCard.vue'
+import IndexGuide from '@/components/General/IndexGuide.vue'
+import CompaniesComparisionTable from '@/components/Grading/CompaniesComparisionTable/CompaniesComparisionTable.vue'
 
 const { t, tm } = useI18n()
 
@@ -142,10 +143,12 @@ html {
   }
 
   &__articles {
-    img {
-      max-width: 200px;
-      max-height: 400px; 
-      border-radius: .5rem;
+    .article-card__image {
+      img {
+        width: 200px;
+        max-height: 400px; 
+        border-radius: .5rem;
+      }
     }
   }
 }

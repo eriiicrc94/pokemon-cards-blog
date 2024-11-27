@@ -1,7 +1,7 @@
 <template>
   <div class="the-header">
     <NuxtLink class="the-header__logo" to='/'>
-      <img v-if="isMobile" src="@/assets/icons/pokeball.png" alt="Pokémon"></img>
+      <img v-if="isMobile" src="@/assets/icons/pokeball.webp" alt="Pokémon"></img>
       <span v-else>Pokémon</span>
     </NuxtLink>
     <div class="the-header__navigator">
