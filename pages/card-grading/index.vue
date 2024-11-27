@@ -47,6 +47,14 @@
         :final-description="t('gradingSection.companiesComparision.conclusion')">
         <companies-comparision-table />
       </article-card>
+
+      <article-card 
+        section-id="shipping-steps"
+        :title="t('gradingSection.shippingSteps.title')" 
+        :description="t('gradingSection.shippingSteps.description')" 
+        :items="shippingSteps"
+        :final-description="t('gradingSection.shippingSteps.conclusion')" 
+        tone="gray" />
   
       <article-card 
         section-id="how-to-protect"
@@ -54,7 +62,16 @@
         :description="t('gradingSection.howToProtectCards.description')" 
         :items="protectingItems"
         :final-description="t('gradingSection.howToProtectCards.conclusion')" 
-        tone="gray" />
+        />
+
+      <article-card 
+        section-id="is-grading-necessary"
+        :title="t('gradingSection.isGradingNecessary.title')" 
+        :description="t('gradingSection.isGradingNecessary.description')" 
+        :items="necessaryReasons"
+        :final-description="t('gradingSection.isGradingNecessary.conclusion')" 
+        tone="gray"
+        />
     </div>
   </div>
 </template>
@@ -84,8 +101,16 @@ const indexGuideItems = [
     text: t('gradingSection.companiesComparision.title')
   },
   {
+    id: '#shipping-steps',
+    text: t('gradingSection.shippingSteps.title')
+  },
+  {
     id: '#how-to-protect',
     text: t('gradingSection.howToProtectCards.title')
+  },
+  {
+    id: '#is-grading-necessary',
+    text: t('gradingSection.isGradingNecessary.title')
   },
 ]
 
@@ -104,8 +129,22 @@ const criterias = computed(() => {
   }))
 })
 
+const shippingSteps = computed(() => {
+ return tm('gradingSection.shippingSteps.steps').map((item) => ({
+    title: item.title?.body?.static || item.title?.b?.s,
+    description: item.description?.body?.static || item.description?.b?.s,
+  }))
+})
+
 const protectingItems = computed(() => {
   return tm('gradingSection.howToProtectCards.protectingItems').map((item) => ({
+    title: item.title?.body?.static || item.title?.b?.s,
+    description: item.description?.body?.static || item.description?.b?.s,
+  }))
+})
+
+const necessaryReasons = computed(() => {
+  return tm('gradingSection.isGradingNecessary.reasons').map((item) => ({
     title: item.title?.body?.static || item.title?.b?.s,
     description: item.description?.body?.static || item.description?.b?.s,
   }))

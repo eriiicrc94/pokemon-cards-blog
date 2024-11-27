@@ -22,7 +22,6 @@ import { isMobile } from '@/composables/useIsMobile'
   display: flex;
   align-items: center;
   padding: 1rem 2rem;
-  max-height: 50px;
   color: #FFFF;
   gap: 3rem;
 

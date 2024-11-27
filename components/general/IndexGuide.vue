@@ -43,11 +43,6 @@ defineProps({
 
     &__item {
       color: #007bff;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
     }
   }
 }

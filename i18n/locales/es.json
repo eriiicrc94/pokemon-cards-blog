@@ -14,7 +14,7 @@
     },
     "gradingCriteria": {
       "title": "Criterios Clave para el Grading de Cartas",
-      "description": "El estado físico de tu carta Pokémon es evaluado según varios factores importantes que determinan su calificación final. Estos son los principales criterios que las casas de grading toman en cuenta:",
+      "description": "El estado físico de tu carta Pokémon es evaluado según varios factores importantes que determinan su calificación final. Estos son los principales criterios que las casas de grading toman en cuenta.",
       "criterias": [
         {
           "title": "Centrado",
@@ -37,7 +37,7 @@
     },
     "bestCompanies": {
       "title": "Las Mejores Casas de Grading de Cartas Pokémon",
-      "description": "Seleccionar la casa de grading adecuada para tus cartas es crucial. Cada compañía tiene criterios específicos, tiempos de entrega y niveles de fiabilidad que pueden influir en el valor final de tu carta. Aquí te mostramos algunas de las más reconocidas en el mundo del coleccionismo",
+      "description": "Seleccionar la casa de grading adecuada para tus cartas es crucial. Cada compañía tiene criterios específicos, tiempos de entrega y niveles de fiabilidad que pueden influir en el valor final de tu carta. Aquí te mostramos algunas de las más reconocidas en el mundo del coleccionismo.",
       "companies": [
         {
           "title": "PSA (Professional Sports Authenticator)",
@@ -69,12 +69,39 @@
     },
     "companiesComparision": {
       "title": "Comparativa de las Mejores Casas de Grading",
-      "description": "Elegir una casa de grading puede ser complicado. Aquí te ofrecemos una tabla comparativa con información clave sobre precios, tiempos de entrega y fiabilidad:",
+      "description": "Elegir una casa de grading puede ser complicado. Aquí te ofrecemos una tabla comparativa con información clave sobre precios, tiempos de entrega y fiabilidad.",
       "conclusion": "Recuerda que, aunque PSA y Beckett son reconocidas mundialmente, otras casas como APGrading pueden ser más accesibles para usuarios en Europa."
+    },
+    "shippingSteps": {
+      "title": "Pasos para Hacer un Envío a una Casa de Grading",
+      "description": "Sigue estos pasos para asegurarte de que tus cartas lleguen de forma segura a una casa de grading y sean evaluadas correctamente.",
+      "steps": [
+        {
+          "title": "1. Reúne los materiales adecuados",
+          "description": "Consigue fundas protectoras, top loaders y una caja resistente para el envío."
+        },
+        {
+          "title": "2. Completa el formulario de envío",
+          "description": "Accede al sitio web de la casa de grading, completa el formulario con tus datos y selecciona el tipo de servicio."
+        },
+        {
+          "title": "3. Empaqueta tus cartas con cuidado",
+          "description": "Coloca las cartas en fundas protectoras, después en top loaders y finalmente en una caja bien acolchada."
+        },
+        {
+          "title": "4. Asegura el paquete",
+          "description": "Elige un servicio de mensajería con seguimiento y seguro para proteger tu envío."
+        },
+        {
+          "title": "5. Envía y guarda el comprobante",
+          "description": "Realiza el envío y guarda el comprobante de rastreo para verificar el estado del paquete."
+        }
+      ],
+      "conclusion": "Un envío adecuado asegura que tus cartas lleguen en perfecto estado y sean evaluadas sin problemas."
     },
     "howToProtectCards": {
       "title": "¿Cómo Proteger tus Cartas Pokémon?",
-      "description": "Proteger tus cartas es crucial para mantener su estado óptimo, especialmente si planeas enviarlas a una casa de grading. Aquí tienes algunos consejos esenciales para asegurar que tus cartas se mantengan en perfectas condiciones:",
+      "description": "Proteger tus cartas es crucial para mantener su estado óptimo, especialmente si planeas enviarlas a una casa de grading. Aquí tienes algunos consejos esenciales para asegurar que tus cartas se mantengan en perfectas condiciones.",
       "protectingItems": [
         {
           "title": "Utiliza fundas protectoras",
@@ -98,6 +125,25 @@
         }
       ],
       "conclusion": "Con estos productos y consejos, puedes garantizar que tus cartas se mantengan en excelentes condiciones y aumenten su valor en el mercado de coleccionismo."
+    },
+    "isGradingNecessary": {
+      "title": "¿Es Realmente Necesario Gradear tus Cartas?",
+      "description": "El grading puede ser una inversión valiosa, pero no siempre es necesario. Aquí te damos algunas razones para considerar si es la opción adecuada para ti.",
+      "reasons": [
+        {
+          "title": "Aumentar el valor de reventa",
+          "description": "Las cartas gradeadas suelen venderse a precios más altos en el mercado."
+        },
+        {
+          "title": "Certificar la autenticidad",
+          "description": "Es una manera de garantizar que la carta es auténtica y está en las condiciones descritas."
+        },
+        {
+          "title": "Proteger cartas valiosas",
+          "description": "El grading asegura que tus cartas estén protegidas de daños futuros."
+        }
+      ],
+      "conclusion": "Si tienes cartas comunes o sin un gran valor sentimental o económico, quizás no sea necesario gradearlas. Evalúa tus prioridades antes de decidir. Al final todo depende de ti."
     }
   }
 }

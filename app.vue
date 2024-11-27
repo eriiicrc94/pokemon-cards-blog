@@ -3,6 +3,7 @@
     <NuxtLayout>
       <the-header></the-header>
       <NuxtPage></NuxtPage>
+      <the-footer></the-footer>
     </NuxtLayout>
   </div>
 </template>
@@ -38,6 +39,21 @@ p {
   font-size: .8rem;
   line-height: 1.5;
   margin: 0;
+
+  @media(min-width: 769px) {
+    font-size: 1rem;
+  }
+}
+
+a {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline
+  }
 
   @media(min-width: 769px) {
     font-size: 1rem;
