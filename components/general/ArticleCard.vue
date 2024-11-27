@@ -17,8 +17,8 @@
       <slot />
       <p>{{ finalDescription }}</p>
     </div>
-    <div v-if="imageSrc" class="article-card__image">
-      <img :src="`/images/${imageSrc}.webp`" :alt="imageAlt" />
+    <div v-if="$slots.imageSection" class="article-card__image">
+      <slot name="imageSection" />
     </div>
   </section>
 </template>
@@ -48,12 +48,6 @@ const props = defineProps({
   reverse: {
     type: Boolean,
     default: false
-  },
-  imageSrc: {
-    type: String,
-  },
-  imageAlt: {
-    type: String,
   },
   tone: {
     type: String,
@@ -97,11 +91,6 @@ const getBackgroundClass = computed(() => {
     align-items: center;
     @media(min-width: 769px) {
       justify-content: flex-end
-    }
-    img {
-      max-width: 200px;
-      max-height: 400px; 
-      border-radius: .5rem;
     }
   }
 

@@ -15,20 +15,23 @@
         :title="t('gradingSection.whatIsGrading.title')" 
         :description="t('gradingSection.whatIsGrading.description')" 
         :final-description="t('gradingSection.whatIsGrading.conclusion')"
-        image-src="pikachupsa9"
-        image-alt="Pikachu PSA 10"
-        tone="gray" />
+        tone="gray" >
+        <template v-slot:imageSection>
+            <img src="@/assets/images/pikachupsa9.webp" alt="Pikachu PSA 10" />
+        </template>
+      </article-card>
 
       <article-card 
-          section-id="grading-criteria"
-          :title="t('gradingSection.gradingCriteria.title')" 
-          :description="t('gradingSection.gradingCriteria.description')" 
-          :items="criterias"
-          :final-description="t('gradingSection.gradingCriteria.conclusion')" 
-          image-src="centrado"
-          image-alt="Centrado Carta Pokémon"
-          reverse
-        />
+        section-id="grading-criteria"
+        :title="t('gradingSection.gradingCriteria.title')" 
+        :description="t('gradingSection.gradingCriteria.description')" 
+        :items="criterias"
+        :final-description="t('gradingSection.gradingCriteria.conclusion')" 
+        reverse >
+        <template v-slot:imageSection>
+            <img src="@/assets/images/centrado.webp" alt="Centrado de Carta Pokémon" />
+        </template>
+      </article-card>
       <article-card 
         section-id="grading-companies"
         :title="t('gradingSection.bestCompanies.title')" 
@@ -56,7 +59,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import ArticleCard from '@/components/general/ArticleCard.vue'
 import IndexGuide from '@/components/general/IndexGuide.vue'
 import CompaniesComparisionTable from '@/components/grading/CompaniesComparisionTable.vue'
@@ -87,7 +90,7 @@ const indexGuideItems = [
 ]
 
 const companiesList = computed(() => {
-  return (tm('gradingSection.bestCompanies.companies') as any[]).map((item) => ({
+  return tm('gradingSection.bestCompanies.companies').map((item) => ({
     title: item.title?.body?.static || item.title?.b?.s,
     description: item.description?.body?.static || item.description?.b?.s,
     link: item.link?.body?.static || item.link?.b?.s,
@@ -95,14 +98,14 @@ const companiesList = computed(() => {
 })
 
 const criterias = computed(() => {
- return (tm('gradingSection.gradingCriteria.criterias') as any[]).map((item) => ({
+ return tm('gradingSection.gradingCriteria.criterias').map((item) => ({
     title: item.title?.body?.static || item.title?.b?.s,
     description: item.description?.body?.static || item.description?.b?.s,
   }))
 })
 
 const protectingItems = computed(() => {
-  return (tm('gradingSection.howToProtectCards.protectingItems') as any[]).map((item) => ({
+  return tm('gradingSection.howToProtectCards.protectingItems').map((item) => ({
     title: item.title?.body?.static || item.title?.b?.s,
     description: item.description?.body?.static || item.description?.b?.s,
   }))
@@ -136,6 +139,14 @@ html {
     flex-direction: column;
     gap: 1rem;
     margin: 0 2rem;
+  }
+
+  &__articles {
+    img {
+      max-width: 200px;
+      max-height: 400px; 
+      border-radius: .5rem;
+    }
   }
 }
 </style>

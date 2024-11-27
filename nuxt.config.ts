@@ -21,7 +21,7 @@ export default defineNuxtConfig({
       ]
     },
   },
-  modules: ['@nuxtjs/i18n'],
+  modules: ['@nuxtjs/i18n', '@nuxt/image'],
   i18n: {
     locales: [
       {
@@ -33,5 +33,10 @@ export default defineNuxtConfig({
     ],
     defaultLocale: 'es', 
     lazy: true,   
-  }
+  },
+  runtimeConfig: {
+    public: {
+      baseUrl: process.env.BASE_URL || 'http://localhost:3000',
+    },
+  },
 })
