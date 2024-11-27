@@ -36,7 +36,7 @@
         section-id="comparison"
         :title="t('gradingSection.companiesComparision.title')" 
         :description="t('gradingSection.companiesComparision.description')" 
-        :final-description="t('gradingSection.rememberOtherCompanies.conclusion')">
+        :final-description="t('gradingSection.companiesComparision.conclusion')">
         <companies-comparision-table />
       </article-card>
   
