@@ -70,7 +70,20 @@
     "companiesComparision": {
       "title": "Comparativa de las Mejores Casas de Grading",
       "description": "Elegir una casa de grading puede ser complicado. Aquí te ofrecemos una tabla comparativa con información clave sobre precios, tiempos de entrega y fiabilidad.",
-      "conclusion": "Recuerda que, aunque PSA y Beckett son reconocidas mundialmente, otras casas como APGrading pueden ser más accesibles para usuarios en Europa."
+      "conclusion": "Recuerda que, aunque PSA y Beckett son reconocidas mundialmente, otras casas como APGrading o EuropeanGrading pueden ser más accesibles para usuarios en Europa."
+    },
+    "spanishCompanies": {
+      "title": "¿También hay empresas de gradeo de Cartas Pokémon en España?",
+      "description": "Existen empresas de gradeo españolas que, aunque no son tan reconocidas internacionalmente como PSA o Beckett, ofrecen una alternativa más económica y accesible, especialmente si resides en España. La cercanía facilita los envíos y reduce costes asociados, como los de transporte o aduanas, lo que las convierte en una excelente opción para quienes están comenzando en el mundo del grading. Estas empresas son ideales para dar tus primeros pasos en la evaluación y protección de tus cartas Pokémon sin grandes inversiones iniciales. Aquí debajo te dejo las 2 más conocidas.",
+      "spanishCompanies": [
+        {
+          "title": "EuropeanGrading"
+        },
+        {
+          "title": "AGMGrading"
+        }
+      ],
+      "conclusion": "Estas son las dos empresas más conocidas en España, pero tambien hay algunas que se han sido fundadas recientemente. Apoyar a estas empresas es crucial para que puedan crecer y ganar prestigio a nivel internacional. Ofrecen una alternativa accesible y adaptada a la comunidad española, con la ventaja de proximidad y una buena relación calidad-precio."
     },
     "shippingSteps": {
       "title": "Pasos para Hacer un Envío a una Casa de Grading",

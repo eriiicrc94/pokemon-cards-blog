@@ -49,12 +49,20 @@
       </article-card>
 
       <article-card 
+        section-id="spanish-companies"
+        :title="t('gradingSection.spanishCompanies.title')" 
+        :description="t('gradingSection.spanishCompanies.description')" 
+        :items="spanishCompanies"
+        :final-description="t('gradingSection.spanishCompanies.conclusion')" 
+        tone="gray" />
+
+      <article-card 
         section-id="shipping-steps"
         :title="t('gradingSection.shippingSteps.title')" 
         :description="t('gradingSection.shippingSteps.description')" 
         :items="shippingSteps"
         :final-description="t('gradingSection.shippingSteps.conclusion')" 
-        tone="gray" />
+        />
   
       <article-card 
         section-id="how-to-protect"
@@ -62,7 +70,7 @@
         :description="t('gradingSection.howToProtectCards.description')" 
         :items="protectingItems"
         :final-description="t('gradingSection.howToProtectCards.conclusion')" 
-        />
+        tone="gray" />
 
       <article-card 
         section-id="is-grading-necessary"
@@ -70,7 +78,6 @@
         :description="t('gradingSection.isGradingNecessary.description')" 
         :items="necessaryReasons"
         :final-description="t('gradingSection.isGradingNecessary.conclusion')" 
-        tone="gray"
         />
     </div>
   </div>
@@ -101,6 +108,10 @@ const indexGuideItems = [
     text: t('gradingSection.companiesComparision.title')
   },
   {
+    id: '#spanish-companies',
+    text: t('gradingSection.spanishCompanies.title')
+  },
+  {
     id: '#shipping-steps',
     text: t('gradingSection.shippingSteps.title')
   },
@@ -124,6 +135,13 @@ const companiesList = computed(() => {
 
 const criterias = computed(() => {
  return tm('gradingSection.gradingCriteria.criterias').map((item) => ({
+    title: item.title?.body?.static || item.title?.b?.s,
+    description: item.description?.body?.static || item.description?.b?.s,
+  }))
+})
+
+const spanishCompanies = computed(() => {
+ return tm('gradingSection.spanishCompanies.spanishCompanies').map((item) => ({
     title: item.title?.body?.static || item.title?.b?.s,
     description: item.description?.body?.static || item.description?.b?.s,
   }))
