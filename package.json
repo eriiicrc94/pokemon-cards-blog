@@ -16,7 +16,8 @@
     "@vueuse/core": "^11.3.0",
     "nuxt": "^3.14.1592",
     "vue": "latest",
-    "vue-router": "latest"
+    "vue-router": "latest",
+    "vue-tsc": "^2.1.10"
   },
   "devDependencies": {
     "sass-embedded": "^1.81.0"

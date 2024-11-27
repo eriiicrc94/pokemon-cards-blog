@@ -60,9 +60,9 @@
 </template>
 
 <script setup>
-import ArticleCard from '@/components/General/ArticleCard.vue'
-import IndexGuide from '@/components/General/IndexGuide.vue'
-import CompaniesComparisionTable from '@/components/Grading/CompaniesComparisionTable/CompaniesComparisionTable.vue'
+import IndexGuide from '~/components/General/IndexGuide.vue'
+import CompaniesComparisionTable from '~/components/Grading/CompaniesComparisionTable/CompaniesComparisionTable.vue'
+import ArticleCard from '~/components/General/ArticleCard.vue'
 
 const { t, tm } = useI18n()
 
