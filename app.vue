@@ -11,29 +11,37 @@
 import TheHeader from '@/components/TheHeader/TheHeader.vue';
 </script>
 
-<style>
+<style lang="scss">
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   font-weight: 700;
   margin: 0;
 }
 
 h2 {
   margin: 0;
-  font-size: 2em;
   font-weight: 600;
+  font-size: 1.5rem;
   color: #007bff;
+  
+  @media(min-width: 769px) {
+    font-size: 2rem;
+  }
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.5;
   margin: 0;
+
+  @media(min-width: 769px) {
+    font-size: 1.2rem;
+  }
 }
 
 ul {

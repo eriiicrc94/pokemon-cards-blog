@@ -1,8 +1,8 @@
 <template>
   <div class="grading-page">
     <header class="grading-page__header">
-      <h1>{{ t('gradingSection.howToGrade') }}</h1>
-      <p>{{ t('gradingSection.findHowToMaximizeValue') }}</p>
+      <h1>{{ t('gradingSection.seo.title') }}</h1>
+      <p>{{ t('gradingSection.seo.description') }}</p>
     </header>
     
     <index-guide
@@ -12,77 +12,40 @@
     <div class="grading-page__articles">
       <article-card 
         section-id="what-is-grading"
-        :title="t('gradingSection.whatIsGrading')" 
-        :description="t('gradingSection.gradingExplanation')" 
-        :final-description="t('gradingSection.gradingObjective')" 
-        tone="gray" />
-      
-      <article-card 
-          section-id="grading-criteria"
-          :title="t('gradingSection.gradingCriteria')" 
-          :description="t('gradingSection.physiqueStateCard')" 
-          :items="criterias"
-          :final-description="t('gradingSection.maximizeCardState')" 
-        />
-  
-      <article-card 
-        section-id="grading-companies"
-        :title="t('gradingSection.bestCompanies')" 
-        :description="t('gradingSection.selectingGradingCompanyCrucial')" 
-        :items="companiesList"
-        :final-description="t('gradingSection.itsOnYou')" 
+        :title="t('gradingSection.whatIsGrading.title')" 
+        :description="t('gradingSection.whatIsGrading.description')" 
+        :final-description="t('gradingSection.whatIsGrading.conclusion')" 
         tone="gray" />
 
+      <article-card 
+          section-id="grading-criteria"
+          :title="t('gradingSection.gradingCriteria.title')" 
+          :description="t('gradingSection.gradingCriteria.description')" 
+          :items="criterias"
+          :final-description="t('gradingSection.gradingCriteria.conclusion')" 
+        />
+      <article-card 
+        section-id="grading-companies"
+        :title="t('gradingSection.bestCompanies.title')" 
+        :description="t('gradingSection.bestCompanies.description')" 
+        :items="companiesList"
+        :final-description="t('gradingSection.bestCompanies.conclusion')" 
+        tone="gray" />
 
       <article-card 
         section-id="comparison"
-        :title="t('gradingSection.companiesComparision')" 
-        :description="t('gradingSection.chooseCompanyComplicated')" 
-        :final-description="t('gradingSection.rememberOtherCompanies')">
-        <table v-if="!isMobile">
-          <thead>
-            <tr>
-              <th>Casa</th>
-              <th>Precio</th>
-              <th>Tiempo de Entrega</th>
-              <th>Fiabilidad</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>PSA</td>
-              <td>Alto</td>
-              <td>Largo</td>
-              <td>Alta</td>
-            </tr>
-            <tr>
-              <td>APGrading</td>
-              <td>Moderado</td>
-              <td>Moderado</td>
-              <td>Alta</td>
-            </tr>
-            <tr>
-              <td>PCAgrade</td>
-              <td>Bajo</td>
-              <td>Corto</td>
-              <td>Moderada</td>
-            </tr>
-            <tr>
-              <td>EuropeanGrading</td>
-              <td>Moderado</td>
-              <td>Moderado</td>
-              <td>Alta</td>
-            </tr>
-          </tbody>
-        </table>
+        :title="t('gradingSection.companiesComparision.title')" 
+        :description="t('gradingSection.companiesComparision.description')" 
+        :final-description="t('gradingSection.rememberOtherCompanies.conclusion')">
+        <companies-comparision-table />
       </article-card>
   
       <article-card 
         section-id="how-to-protect"
-        :title="t('gradingSection.howToProtectCards')" 
-        :description="t('gradingSection.howToProtectDescription')" 
+        :title="t('gradingSection.howToProtectCards.title')" 
+        :description="t('gradingSection.howToProtectCards.description')" 
         :items="protectingItems"
-        :final-description="t('gradingSection.howToProtectConclusion')" 
+        :final-description="t('gradingSection.howToProtectCards.conclusion')" 
         tone="gray" />
     </div>
   </div>
@@ -91,35 +54,35 @@
 <script setup lang="ts">
 import ArticleCard from '@/components/general/ArticleCard.vue'
 import IndexGuide from '@/components/general/IndexGuide.vue'
-import { isMobile } from '@/composables/useIsMobile'
+import CompaniesComparisionTable from '@/components/grading/CompaniesComparisionTable.vue'
 
 const { t, tm } = useI18n()
 
 const indexGuideItems = [
   {
     id: '#what-is-grading',
-    text: t('gradingSection.whatIsGrading')
+    text: t('gradingSection.whatIsGrading.title')
   },
   {
     id: '#grading-criteria',
-    text: t('gradingSection.gradingCriteria')
+    text: t('gradingSection.gradingCriteria.title')
   },
   {
     id: '#grading-companies',
-    text: t('gradingSection.bestCompanies')
+    text: t('gradingSection.bestCompanies.title')
   },
   {
     id: '#comparison',
-    text: t('gradingSection.companiesComparision')
+    text: t('gradingSection.companiesComparision.title')
   },
   {
     id: '#how-to-protect',
-    text: t('gradingSection.howToProtectCards')
+    text: t('gradingSection.howToProtectCards.title')
   },
 ]
 
 const companiesList = computed(() => {
-  return (tm('gradingSection.companies') as any[]).map((item) => ({
+  return (tm('gradingSection.bestCompanies.companies') as any[]).map((item) => ({
     title: item.title?.body?.static || item.title?.b?.s,
     description: item.description?.body?.static || item.description?.b?.s,
     link: item.link?.body?.static || item.link?.b?.s,
@@ -127,17 +90,25 @@ const companiesList = computed(() => {
 })
 
 const criterias = computed(() => {
- return (tm('gradingSection.criterias') as any[]).map((item) => ({
+ return (tm('gradingSection.gradingCriteria.criterias') as any[]).map((item) => ({
     title: item.title?.body?.static || item.title?.b?.s,
     description: item.description?.body?.static || item.description?.b?.s,
   }))
 })
 
 const protectingItems = computed(() => {
-  return (tm('gradingSection.protectingItems') as any[]).map((item) => ({
+  return (tm('gradingSection.howToProtectCards.protectingItems') as any[]).map((item) => ({
     title: item.title?.body?.static || item.title?.b?.s,
     description: item.description?.body?.static || item.description?.b?.s,
   }))
+})
+
+useSeoMeta({
+  title: t('gradingSection.seo.title'),
+  ogTitle: t('gradingSection.seo.title'),
+  description: t('gradingSection.seo.description'),
+  // ogDescription: t('seo.description'),
+  // ogImage: `${config.public.baseUrl}/v3/images/solar-panels/solar-panels-og.jpg`
 })
 </script>
 
@@ -158,18 +129,5 @@ const protectingItems = computed(() => {
     gap: 1rem;
     margin: 0 2rem;
   }
-}
-
-table,
-th,
-td {
-  border: 1px solid #ddd;
-  padding: 12px;
-  text-align: center;
-}
-
-th {
-  background-color: #f4f4f4;
-  font-weight: 700;
 }
 </style>

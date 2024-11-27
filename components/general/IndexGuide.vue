@@ -33,11 +33,6 @@ defineProps({
   border-radius: .5rem;
   gap: 1rem;
 
-  &__title {
-    font-size: 1.5rem;
-    color: #007bff;
-  }
-
   &__list {
     display: flex;
     flex-direction: column;

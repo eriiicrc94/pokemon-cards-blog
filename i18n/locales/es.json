@@ -2,90 +2,102 @@
   "title": "Bienvenido a Pokémon",
   "description": "Aprende cómo gradear tus cartas Pokémon profesionalmente.",
   "gradingSection": {
-    "howToGrade": "Cómo gradear Cartas Pokémon: Guía Completa",
-    "findHowToMaximizeValue": "Descubre cómo evaluar y clasificar tus cartas Pokémon para maximizar su valor, conoce las casas de grading más importantes y los criterios esenciales para obtener la mejor calificación.",
+    "seo": {
+      "title": "Cómo gradear Cartas Pokémon: Guía Completa",
+      "description": "Descubre cómo cuidar, evaluar y clasificar tus cartas Pokémon para maximizar su valor, conoce las casas de grading más importantes y los criterios esenciales para obtener la mejor calificación."
+    },
     "completeGuide": "Guía Completa",
-    "whatIsGrading": "¿Qué es el Grading de Cartas Pokémon?",
-    "howToProtectCards": "¿Cómo Proteger tus Cartas Pokémon?",
-    "bestCompanies": "Las Mejores Casas de Grading de Cartas Pokémon",
-    "gradingCriteria": "Criterios Clave para el Grading de Cartas",
-    "companiesComparision": "Comparativa de las Mejores Casas de Grading",
-    "gradingExplanation": "El grading, o la calificación de cartas coleccionables, es un proceso mediante el cual especialistas evalúan y autentican el estado de una carta Pokémon. Este sistema es esencial para determinar su valor en el mercado de coleccionismo. Durante este procedimiento, se examinan varios aspectos de la carta, como su estado físico y su autenticidad.",
-    "gradingObjective": "El objetivo principal del grading es certificar que la carta cumple con estándares de calidad reconocidos mundialmente. Las cartas en perfecto estado con calificaciones altas son extremadamente deseadas por los coleccionistas, lo que incrementa significativamente su precio de reventa. Si tienes cartas raras, el grading es un paso esencial para preservar su valor a largo plazo.",
-    "selectingGradingCompanyCrucial": "Seleccionar la casa de grading adecuada para tus cartas es crucial. Cada compañía tiene criterios específicos, tiempos de entrega y niveles de fiabilidad que pueden influir en el valor final de tu carta. Aquí te mostramos algunas de las más reconocidas en el mundo del coleccionismo",
-    "companies": [
-      {
-        "title": "PSA (Professional Sports Authenticator)",
-        "description": "Es la casa de grading más popular y respetada. Conocida por sus rigurosos estándares, las cartas con una calificación PSA 10 alcanzan precios astronómicos.",
-        "link": "https://www.psacard.com"
-      },
-      {
-        "title": "Beckett Grading Services (BGS)",
-        "description": "Especializada en calificaciones precisas y detalladas, Beckett se destaca por su estricta evaluación de esquinas y bordes.",
-        "link": "https://www.beckett.com/grading"
-      },
-      {
-        "title": "APGrading",
-        "description": "Una opción asequible en Europa, ofrece buenos tiempos de entrega y resultados confiables.",
-        "link": "https://www.apgrading.com"
-      },
-      {
-        "title": "PCAgrade",
-        "description": "Popular en Francia y otros países europeos, conocida por un enfoque rápido y accesible.",
-        "link": "https://www.pcagrade.com"
-      },
-      {
-        "title": "EuropeanGrading",
-        "description": "Una de las casas líderes en Europa, famosa por su atención al detalle y precios competitivos.",
-        "link": "https://www.europeangrading.com"
-      }
-    ],
-    "itsOnYou": "Elegir una casa de grading depende de tus objetivos: aumentar el valor de reventa, proteger tu carta o simplemente certificar su autenticidad.",
-    "physiqueStateCard": "El estado físico de tu carta Pokémon es evaluado según varios factores importantes que determinan su calificación final. Estos son los principales criterios que las casas de grading toman en cuenta:",
-    "criterias": [
-      {
-        "title": "Centrado",
-        "description": "Este aspecto evalúa la simetría de los bordes de la carta. Una imagen perfectamente centrada añade valor."
-      },
-      {
-        "title": "Esquinas",
-        "description": "Las esquinas deben estar limpias y sin daños visibles. Incluso el desgaste mínimo puede afectar la calificación."
-      },
-      {
-        "title": "Superficie",
-        "description": "Examina cualquier imperfección como arañazos, manchas o decoloración. La limpieza es esencial para obtener una calificación alta."
-      },
-      {
-        "title": "Bordes",
-        "description": "El desgaste o daños en los bordes reducen significativamente el valor de la carta."
-      }
-    ],
-    "maximizeCardState": "Para maximizar el estado de tu carta, utiliza fundas protectoras y evita manipularla sin guantes. Las cartas bien cuidadas no solo obtienen calificaciones más altas, sino que también se preservan mejor a lo largo deltiempo.",
-    "chooseCompanyComplicated": "Elegir una casa de grading puede ser complicado. Aquí te ofrecemos una tabla comparativa con información clave sobre precios, tiempos de entrega y fiabilidad:",
-    "rememberOtherCompanies": "Recuerda que, aunque PSA y Beckett son reconocidas mundialmente, otras casas como APGrading pueden ser más accesibles para usuarios en Europa.",
-    "howToProtectDescription": "Proteger tus cartas es crucial para mantener su estado óptimo, especialmente si planeas enviarlas a una casa de grading. Aquí tienes algunos consejos esenciales para asegurar que tus cartas se mantengan en perfectas condiciones:",
-    "protectingItems": [
-      {
-        "title": "Utiliza fundas protectoras (sleeves)",
-        "description": "Estas fundas transparentes protegen la superficie de las cartas contra arañazos y polvo."
-      },
-      {
-        "title": "Guárdalas en top loaders",
-        "description": "Estas fundas rígidas añaden una capa de protección contra impactos y presión."
-      },
-      {
-        "title": "Usa archivadores",
-        "description": "Los archivadores son ideales para almacenar grandes colecciones y mantener las cartas organizadas."
-      },
-      {
-        "title": "Protege contra la luz solar directa",
-        "description": "La exposición prolongada a la luz ultravioleta puede desvanecer los colores de las cartas. Considere almacenarlas en un lugar oscuro o en cajas especiales con protección UV."
-      },
-      {
-        "title": "Mantén un ambiente seco",
-        "description": "Evita la humedad usando sobres de silicagel para reducir el riesgo de deformaciones o moho."
-      }
-    ] ,
-    "howToProtectConclusion": "Con estos productos y consejos, puedes garantizar que tus cartas se mantengan en excelentes condiciones y aumenten su valor en el mercado de coleccionismo."
+    "whatIsGrading": {
+      "title": "¿Qué es el Grading de Cartas Pokémon?",
+      "description": "El grading, o la calificación de cartas coleccionables, es un proceso mediante el cual especialistas evalúan y autentican el estado de una carta Pokémon. Este sistema es esencial para determinar su valor en el mercado de coleccionismo. Durante este procedimiento, se examinan varios aspectos de la carta, como su estado físico y su autenticidad.",
+      "conclusion": "El objetivo principal del grading es certificar que la carta cumple con estándares de calidad reconocidos mundialmente. Las cartas en perfecto estado con calificaciones altas son extremadamente deseadas por los coleccionistas, lo que incrementa significativamente su precio de reventa. Si tienes cartas raras, el grading es un paso esencial para preservar su valor a largo plazo."
+    },
+    "gradingCriteria": {
+      "title": "Criterios Clave para el Grading de Cartas",
+      "description": "El estado físico de tu carta Pokémon es evaluado según varios factores importantes que determinan su calificación final. Estos son los principales criterios que las casas de grading toman en cuenta:",
+      "criterias": [
+        {
+          "title": "Centrado",
+          "description": "Este aspecto evalúa la simetría de los bordes de la carta. Una imagen perfectamente centrada añade valor."
+        },
+        {
+          "title": "Esquinas",
+          "description": "Las esquinas deben estar limpias y sin daños visibles. Incluso el desgaste mínimo puede afectar la calificación."
+        },
+        {
+          "title": "Superficie",
+          "description": "Examina cualquier imperfección como arañazos, manchas o decoloración. La limpieza es esencial para obtener una calificación alta."
+        },
+        {
+          "title": "Bordes",
+          "description": "El desgaste o daños en los bordes reducen significativamente el valor de la carta."
+        }
+      ],
+      "conclusion": "Para maximizar el estado de tu carta, utiliza fundas protectoras y evita manipularla sin guantes. Las cartas bien cuidadas no solo obtienen calificaciones más altas, sino que también se preservan mejor a lo largo deltiempo."
+    },
+    "bestCompanies": {
+      "title": "Las Mejores Casas de Grading de Cartas Pokémon",
+      "description": "Seleccionar la casa de grading adecuada para tus cartas es crucial. Cada compañía tiene criterios específicos, tiempos de entrega y niveles de fiabilidad que pueden influir en el valor final de tu carta. Aquí te mostramos algunas de las más reconocidas en el mundo del coleccionismo",
+      "companies": [
+        {
+          "title": "PSA (Professional Sports Authenticator)",
+          "description": "Es la casa de grading más popular y respetada. Conocida por sus rigurosos estándares, las cartas con una calificación PSA 10 alcanzan precios astronómicos.",
+          "link": "https://www.psacard.com"
+        },
+        {
+          "title": "Beckett Grading Services (BGS)",
+          "description": "Especializada en calificaciones precisas y detalladas, Beckett se destaca por su estricta evaluación de esquinas y bordes.",
+          "link": "https://www.beckett.com/grading"
+        },
+        {
+          "title": "APGrading",
+          "description": "Una opción asequible en Europa, ofrece buenos tiempos de entrega y resultados confiables.",
+          "link": "https://www.apgrading.com"
+        },
+        {
+          "title": "PCAgrade",
+          "description": "Popular en Francia y otros países europeos, conocida por un enfoque rápido y accesible.",
+          "link": "https://www.pcagrade.com"
+        },
+        {
+          "title": "EuropeanGrading",
+          "description": "Una de las casas líderes en Europa, famosa por su atención al detalle y precios competitivos.",
+          "link": "https://www.europeangrading.com"
+        }
+      ],
+      "conclusion": "Elegir una casa de grading depende de tus objetivos: aumentar el valor de reventa, proteger tu carta o simplemente certificar su autenticidad."
+    },
+    "companiesComparision": {
+      "title": "Comparativa de las Mejores Casas de Grading",
+      "description": "Elegir una casa de grading puede ser complicado. Aquí te ofrecemos una tabla comparativa con información clave sobre precios, tiempos de entrega y fiabilidad:",
+      "conclusion": "Recuerda que, aunque PSA y Beckett son reconocidas mundialmente, otras casas como APGrading pueden ser más accesibles para usuarios en Europa."
+    },
+    "howToProtectCards": {
+      "title": "¿Cómo Proteger tus Cartas Pokémon?",
+      "description": "Proteger tus cartas es crucial para mantener su estado óptimo, especialmente si planeas enviarlas a una casa de grading. Aquí tienes algunos consejos esenciales para asegurar que tus cartas se mantengan en perfectas condiciones:",
+      "protectingItems": [
+        {
+          "title": "Utiliza fundas protectoras (sleeves)",
+          "description": "Estas fundas transparentes protegen la superficie de las cartas contra arañazos y polvo."
+        },
+        {
+          "title": "Guárdalas en top loaders",
+          "description": "Estas fundas rígidas añaden una capa de protección contra impactos y presión."
+        },
+        {
+          "title": "Usa archivadores",
+          "description": "Los archivadores son ideales para almacenar grandes colecciones y mantener las cartas organizadas."
+        },
+        {
+          "title": "Protege contra la luz solar directa",
+          "description": "La exposición prolongada a la luz ultravioleta puede desvanecer los colores de las cartas. Considere almacenarlas en un lugar oscuro o en cajas especiales con protección UV."
+        },
+        {
+          "title": "Mantén un ambiente seco",
+          "description": "Evita la humedad usando sobres de silicagel para reducir el riesgo de deformaciones o moho."
+        }
+      ],
+      "conclusion": "Con estos productos y consejos, puedes garantizar que tus cartas se mantengan en excelentes condiciones y aumenten su valor en el mercado de coleccionismo."
+    }
   }
 }
