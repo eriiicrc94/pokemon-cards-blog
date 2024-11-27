@@ -4,7 +4,6 @@
       <h1>{{ t('gradingSection.seo.title') }}</h1>
       <p>{{ t('gradingSection.seo.description') }}</p>
     </header>
-    
     <index-guide
       :title="t('gradingSection.completeGuide')"
       :items="indexGuideItems" />
